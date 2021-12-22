@@ -24,7 +24,7 @@ export function useAuth () {
   }
 
   const logout = async () => {
-    const { error } = await supdb.auth.signOut()
+    const { error } = await supabase.auth.signOut()
 
     if (error) throw error
   }
